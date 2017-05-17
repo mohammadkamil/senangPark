@@ -347,6 +347,7 @@ label:empty {
 @media all {
   .logintext p {
     font-size: 120%;
+    color: #a63600;
     text-align: center;
   }
 }
@@ -531,6 +532,7 @@ label:empty {
 @media all {
   .registeruser p {
     font-size: 120%;
+    color: #a63600;
     text-align: center;
   }
 }
@@ -1709,5 +1711,35 @@ label:empty {
     left: 0px;
     height: auto !important;
     width: auto !important;
+  }
+}
+@media all {
+  .wrapping-col > .topup,
+  .wrapping-col > .afScrollPanel > .topup {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .wrapping-col > .topup,
+  .wrapping-col > .afScrollPanel > .topup {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .topup {
+    margin-top: 30%;
+  }
+}
+@media all {
+  .wrapping-col > .registers,
+  .wrapping-col > .afScrollPanel > .registers {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .wrapping-col > .registers,
+  .wrapping-col > .afScrollPanel > .registers {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .registers {
+    margin-top: 10%;
   }
 }

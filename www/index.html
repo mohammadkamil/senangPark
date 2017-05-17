@@ -72,51 +72,54 @@
         <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
         <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
         <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="js/bootbox.min.js"></script>
     </head>
 
     <body>
         <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
         <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-        <div class="upage vertical-col left background" id="mainpage">
+        <div class="upage background" id="mainpage">
 
-            <div class="well no_wrap  widget uib_w_1 d-margins loginPanel" data-uib="twitter%20bootstrap/well" data-ver="1">
-                <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
-                    <div class="widget-container content-area vertical-col">
+            <div class="upage-content ac0 content-area vertical-col left" id="uib_page_4">
+                <div class="well no_wrap  widget uib_w_1 d-margins loginPanel" data-uib="twitter%20bootstrap/well" data-ver="1">
+                    <div class="col uib_col_1 single-col" data-uib="layout/col" data-ver="0">
+                        <div class="widget-container content-area vertical-col">
 
-                        <span class="uib_shim"></span>
+                            <span class="uib_shim"></span>
 
-                        <div class="tarea widget uib_w_3 d-margins logintext" data-uib="media/text" data-ver="0" name="uib_w_3">
-                            <div class="widget-container left-receptacle"></div>
-                            <div class="widget-container right-receptacle"></div>
-                            <div class="text-container">
-                                <p><strong>LOGIN&nbsp;</strong>
-                                </p>
+                            <div class="tarea widget uib_w_3 d-margins logintext" data-uib="media/text" data-ver="0" name="uib_w_3">
+                                <div class="widget-container left-receptacle"></div>
+                                <div class="widget-container right-receptacle"></div>
+                                <div class="text-container">
+                                    <p><strong>LOGIN&nbsp;</strong>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="table-thing widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                            <label class="narrow-control" for="barAttenLogin"></label>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td style="width:100%">
-                                            <input class="wide-control form-control default" type="text" placeholder="Barcode Attendent" id="barAttenLogin" width="100%">
-                                        </td>
-                                        <td>
-                                            <button class="widget uib_w_37 d-margins btnscan btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnScanBarcodeL"><i class="el el-camera" data-position="icon only"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-thing widget uib_w_4 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                <label class="narrow-control" for="barAttenLogin"></label>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:100%">
+                                                <input class="wide-control form-control default" type="text" placeholder="Barcode Attendent" id="barAttenLogin" width="100%">
+                                            </td>
+                                            <td>
+                                                <button class="widget uib_w_37 d-margins btnscan btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnScanBarcodeL"><i class="el el-camera" data-position="icon only"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
+                            </div>
+                            <div class="table-thing widget uib_w_6 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                <label class="narrow-control" for="passwordLogin"></label>
+                                <input class="wide-control form-control default" type="password" placeholder="Password" id="passwordLogin">
+                            </div>
+                            <button class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnLogin"><i class="glyphicon glyphicon-user button-icon-left" data-position="left"></i>Login</button>
                         </div>
-                        <div class="table-thing widget uib_w_6 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                            <label class="narrow-control" for="passwordLogin"></label>
-                            <input class="wide-control form-control default" type="password" placeholder="Password" id="passwordLogin">
-                        </div>
-                        <button class="btn widget uib_w_7 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnLogin"><i class="glyphicon glyphicon-user button-icon-left" data-position="left"></i>Login</button>
                     </div>
                 </div>
             </div>
@@ -133,9 +136,17 @@
                     </div>
                 </div>
                 <div class="upage-content ac0 content-area vertical-col left" id="uib_page_2">
-                    <div class="well no_wrap  widget uib_w_9 d-margins" data-uib="twitter%20bootstrap/well" data-ver="1">
+                    <div class="well no_wrap  widget uib_w_9 d-margins topup" data-uib="twitter%20bootstrap/well" data-ver="1">
                         <div class="col uib_col_3 single-col" data-uib="layout/col" data-ver="0">
                             <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_38 d-margins registeruser" data-uib="media/text" data-ver="0" name="uib_w_38">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p><strong>Profile</strong>
+                                        </p>
+                                    </div>
+                                </div>
                                 <table id="loginTable">
 
                                 </table>
@@ -145,7 +156,7 @@
                     </div>
                 </div>
                 <div id="register" class="upage-content vertical-col left hidden">
-                    <div class="panel widget uib_w_17 d-margins panel-default" data-uib="twitter%20bootstrap/panel" data-ver="1">
+                    <div class="panel widget uib_w_17 d-margins panel-default registers" data-uib="twitter%20bootstrap/panel" data-ver="1">
                         <div class="panel-heading">
                             <div class="widget-container">
                                 <div class="tarea widget uib_w_18 d-margins registeruser" data-uib="media/text" data-ver="0" name="uib_w_18">
@@ -174,7 +185,20 @@
                                 </div>
                                 <div class="table-thing widget uib_w_22 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
                                     <label class="narrow-control" for="registerBarcode"></label>
-                                    <input class="wide-control form-control default" type="text" placeholder="Barcode User" id="registerBarcode">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:100%">
+                                                    <input class="wide-control form-control default" type="text" placeholder="Barcode User" id="registerBarcode">
+                                                </td>
+                                                <td>
+                                                    <button class="btn widget uib_w_44 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnScanRegister"><i class="el el-camera button-icon-left" data-position="left"></i> 
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                 </div>
                                 <div class="table-thing widget uib_w_26 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
                                     <label class="narrow-control" for="registerPassword"></label>
@@ -202,6 +226,7 @@
                                 <div class="widget-container content-area vertical-col">
                                     <button class="btn widget uib_w_14 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="slideRegister">Register</button>
                                     <button class="btn widget uib_w_15 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="slideTopup">Topup</button>
+                                    <button class="btn widget uib_w_42 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="slideFree">List Free Lot</button>
                                     <button class="btn widget uib_w_16 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="slideLogout">Logout</button><span class="uib_shim"></span>
                                 </div>
                             </div>
@@ -209,9 +234,10 @@
                     </div>
                 </div>
                 <div id="topup" class="upage-content vertical-col left hidden">
-                    <div class="panel widget uib_w_28 d-margins panel-default" data-uib="twitter%20bootstrap/panel" data-ver="1">
-                        <div class="panel-heading">
-                            <div class="widget-container">
+
+                    <div class="well no_wrap  widget uib_w_27 d-margins topup" data-uib="twitter%20bootstrap/well" data-ver="1">
+                        <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
                                 <div class="tarea widget uib_w_29 d-margins registeruser" data-uib="media/text" data-ver="0" name="uib_w_29">
                                     <div class="widget-container left-receptacle"></div>
                                     <div class="widget-container right-receptacle"></div>
@@ -220,40 +246,71 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
-                            <div class="widget-container content-area vertical-col">
-                                <div class="well no_wrap  widget uib_w_27 d-margins" data-uib="twitter%20bootstrap/well" data-ver="1">
-                                    <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
-                                        <div class="widget-container content-area vertical-col">
-                                            <div class="table-thing widget uib_w_30 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
-                                                <label class="narrow-control" for="barcodeTopup"></label>
-                                                <input class="wide-control form-control default" type="text" placeholder="Barcode User" id="barcodeTopup">
-                                            </div>
-                                            <div class="table-thing widget uib_w_35 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
-                                                <label class="narrow-control label-inline">Topup Value</label>
-                                                <select class="wide-control form-control default" id="valueTopup">
-                                                    <option>RM 5</option>
-                                                    <option>RM 10</option>
-                                                    <option>RM 20</option>
-                                                </select>
-                                            </div>
-                                            <div class="sbs-container widget uib_w_33 d-margins" data-uib="layout/side_by_side" data-ver="0">
-                                                <div class="leftContent widget-container">
-                                                    <button class="btn widget uib_w_32 d-margins btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnTopup">TOPUP</button>
-                                                </div>
-                                                <div class="rightContent widget-container">
-                                                    <button class="btn widget uib_w_34 d-margins btn-danger" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnTopCan">Cancel</button>
-                                                </div>
-                                            </div>
-                                            <span class="uib_shim"></span>
-                                        </div>
-                                    </div>
-                                </div><span class="uib_shim"></span>
-                            </div>
-                        </div>
+                                <div class="table-thing widget uib_w_30 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="barcodeTopup"></label>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:100%">
+                                                    <input class="wide-control form-control default" type="text" placeholder="Barcode User" id="barcodeTopup">
+                                                </td>
+                                                <td>
+                                                    <button class="btn widget uib_w_44 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnScanTopup"><i class="el el-camera button-icon-left" data-position="left"></i> 
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
+                                </div>
+
+                                <div class="table-thing widget uib_w_35 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
+                                    <label class="narrow-control label-inline">Topup Value</label>
+                                    <select class="wide-control form-control default" id="valueTopup">
+                                        <option value="5">RM 5</option>
+                                        <option value="10">RM 10</option>
+                                        <option value="20">RM 20</option>
+                                    </select>
+                                </div>
+                                <div class="sbs-container widget uib_w_33 d-margins" data-uib="layout/side_by_side" data-ver="0">
+                                    <div class="leftContent widget-container">
+                                        <button class="btn widget uib_w_32 d-margins btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnTopup">TOPUP</button>
+                                    </div>
+                                    <div class="rightContent widget-container">
+                                        <button class="btn widget uib_w_34 d-margins btn-danger" data-uib="twitter%20bootstrap/button" data-ver="1" id="btnTopCan">Cancel</button>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="enforcement" class="upage-content vertical-col left hidden">
+                    <div class="well no_wrap  widget uib_w_39 d-margins" data-uib="twitter%20bootstrap/well" data-ver="1">
+                        <div class="col uib_col_8 single-col" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_40 d-margins registeruser" data-uib="media/text" data-ver="0" name="uib_w_40">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle">
+                                        <button class="btn widget uib_w_41 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="chkBsr">Check Bar code</button>
+                                    </div>
+                                    <div class="text-container">
+                                        <p><strong>Free lot</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tarea widget uib_w_43 d-margins" data-uib="media/text" data-ver="0" name="uib_w_43">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <ol id="olist">
+                                            <li>a</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
