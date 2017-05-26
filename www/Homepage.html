@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+</head>
+
+<body class="color" onload="myFunction()">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">SenangPark Attendent</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="Homepage.html">Home </a></li>
+                    <li role="presentation"><a href="Register%20User.html">Register User</a></li>
+                    <li role="presentation"><a href="topUp.html">TopUp </a></li>
+                    <li role="presentation"><a href="Enforcement.html">Enforcement </a></li>
+                    <li role="presentation"><a href="index.html">Logout </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="text-center">Profile </h1>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name </th>
+                        <th id="username">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No Telefon</td>
+                        <td id="notel">Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Area Center</td>
+                        <td id="area">Cell 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function GetParam(name) {
+            var start = location.search.indexOf("?" + name + "=");
+            if (start < 0) start = location.search.indexOf("&" + name + "=");
+            if (start < 0) return '';
+            start += name.length + 2;
+            var end = location.search.indexOf("&", start) - 1;
+            if (end < 0) end = location.search.length;
+            var result = '';
+            for (var i = start; i <= end; i++) {
+                var c = location.search.charAt(i);
+                result = result + (c == '+' ? ' ' : c);
+            }
+            return unescape(result);
+        }
+        var json = JSON.parse(GetParam("JSON"));
+   
+        function myFunction() {
+            if(localStorage.getItem("username")===null){
+                 $("#username").html(json.senangName);
+            $("#notel").html(json.userNotel);
+            $("#area").html(json.senangAreaAttendent);
+            localStorage.setItem("username", json.senangName);
+            localStorage.setItem("notel", json.userNotel);
+            localStorage.setItem("area", json.senangAreaAttendent);
+                localStorage.setItem("attendentbarcode",json.userBarCode)
+            }else{
+                $("#username").html(localStorage.getItem("username"));
+            $("#notel").html(localStorage.getItem("notel"));
+            $("#area").html(localStorage.getItem("area"));
+            }
+           
+            
+        }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
